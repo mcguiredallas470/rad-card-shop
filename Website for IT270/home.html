@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Rad Card Shop</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1 align="center">Welcome to the Rad Card Shop!</h1>
+
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="events.html">Events and Tournament</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</div>
+
+<div class="content-wrapper">
+
+    <div class="set-box">
+
+        <!--Magic-->
+        <a href="shop.html" style="text-decoration:none; color:black;">
+        <h3><u>New Magic The Gathering Sets!</u></h3>
+        </a>
+
+        <div class="slideshow-container" id="magicSlides">
+
+            <div class="slide fade">
+                <img src="images/avatar mtg set.jpg">
+                <h4>Avatar: The Last Airbender Booster Box</h4><h4>$138</h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/aether mtg.jpg">
+                <h4>Aetherdrift Play Booster Box</h4><h4>$134</h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/final fantasy magic.jpg">
+                <h4>Final Fantasy Crossover Booster Box</h4><h4>$144</h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/spiderman mtg.jpg">
+                <h4>Marvel Spider-Man Play Booster Box</h4><h4>$114</h4>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'magicSlides')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'magicSlides')">❯</a>
+
+        </div>
+
+        <div class="dots" id="magicDots">
+            <span class="dot" onclick="currentSlide(1, 'magicSlides')"></span>
+            <span class="dot" onclick="currentSlide(2, 'magicSlides')"></span>
+            <span class="dot" onclick="currentSlide(3, 'magicSlides')"></span>
+            <span class="dot" onclick="currentSlide(4, 'magicSlides')"></span>
+        </div>
+
+        <!--Pokemon-->
+        <a href="shop.html" style="text-decoration:none; color:black;">
+        <h3><u>New Pokémon Sets!</u></h3>
+        </a>
+
+        <div class="slideshow-container" id="pokemonSlides">
+
+            <div class="slide fade">
+                <img src="images/Pokemon set.jpg">
+                <h4>Phantasmal Flames Elite Trainer Box</h4><h4>$99</h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/prismatic pokemon.jpg">
+                <h4>Prismatic Evolutions Elite Trainer Box</h4><h4>$124</h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/sparks pokemon.jpg">
+                <h4>Surging Sparks Elite Trainer Box</h4><h4>$68</h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/151 pokemon.jpg">
+                <h4>Scarlet & Violet 151 Elite Trainer Box</h4><h4>$349</h4>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'pokemonSlides')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'pokemonSlides')">❯</a>
+
+        </div>
+
+        <div class="dots" id="pokemonDots">
+            <span class="dot" onclick="currentSlide(1, 'pokemonSlides')"></span>
+            <span class="dot" onclick="currentSlide(2, 'pokemonSlides')"></span>
+            <span class="dot" onclick="currentSlide(3, 'pokemonSlides')"></span>
+            <span class="dot" onclick="currentSlide(4, 'pokemonSlides')"></span>
+        </div>
+
+        <!--Sale-->
+        <h3 style="text-align:center; color:red; font-weight:bold; margin-top:5px;">🔥 SALE! 🔥</h3>
+
+        <div class="slideshow-container" id="saleSlides">
+
+            <div class="slide fade">
+                <img src="images/bloom mtg.jpg">
+                <h4>Bloomburrow Bundle</h4><h4><s>$49.99</s> — <span style="color:red; font-weight:bold;">$39.99</span></h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/mh2 mtg.jpg">
+                <h4>Modern Horizons 2 Booster Packs</h4><h4><s>$9.99</s> — <span style="color:red; font-weight:bold;">$6.99</span></h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/rivals pokemon.jpg">
+                <h4>Destined Rivals Booster Packs</h4><h4><s>$4.99</s> — <span style="color:red; font-weight:bold;">$2.99</span></h4>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/scarlet pokemon.jpg">
+                <h4>Scarlet & Violet Booster Packs</h4><h4><s>$4.99</s> — <span style="color:red; font-weight:bold;">$3.49</span></h4>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'saleSlides')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'saleSlides')">❯</a>
+
+        </div>
+
+        <div class="dots" id="saleDots">
+            <span class="dot" onclick="currentSlide(1, 'saleSlides')"></span>
+            <span class="dot" onclick="currentSlide(2, 'saleSlides')"></span>
+            <span class="dot" onclick="currentSlide(3, 'saleSlides')"></span>
+            <span class="dot" onclick="currentSlide(4, 'saleSlides')"></span>
+        </div>
+
+    </div>
+
+    <!--Tournaments-->
+    <div class="events-box">
+        <a href="events.html" style="text-decoration:none; color:black;">
+            <h3>Upcoming Events<br>and<br>Tournaments!</h3>
+        </a>
+
+        <p style="font-weight:bold; margin-top:40px;">
+            Magic The Gathering Commander Tournament<br>
+            $5 Buy in.<br>
+            December 20th, 2025<br>
+            Prizes for 1st, 2nd, and 3rd place!
+        </p>
+
+        <img src="images/magic tournament.jpg">
+
+        <p style="font-weight:bold; margin-top:40px;">
+            Pokémon Tournament<br>
+            $5 Buy in.<br>
+            December 22nd, 2025<br>
+            Prizes for 1st, 2nd, and 3rd place!
+        </p>
+
+        <img src="images/pokemon tournament.jpg">
+    </div>
+
+    <!--Spotlight-->
+    <div class="set-box">
+
+        <h3><u>Card Spotlight of the Week!</u></h3>
+
+        <img src="images/spotlight card.jpg" alt="Avatar Aang MTG" class="info-img">
+
+        <h4><strong>Aang, Master of Elements</strong></h4>
+        <p class="info-text">
+            <strong>Flying, firebending 2</strong><br>
+            Whenever you waterbend, earthbend, firebend, or airbend, draw a card.  
+            If you've done all four this turn, transform Avatar Aang.<br><br>
+
+            Spells you cast cost <strong>WUBRG less</strong> to cast.<br><br>
+
+            At the beginning of each upkeep, you may transform Aang, Master of Elements.  
+            If you do, you gain 4 life, draw four cards, put four +1/+1 counters on him,  
+            and he deals 4 damage to each opponent.
+        </p>
+
+        <h3 style="color:darkgreen; margin-top:12px;">
+            Price: $4,000
+        </h3>
+
+    </div>
+
+</div>
+
+<script>
+let slideIndex = {};
+
+function initSlideshow(id) {
+    slideIndex[id] = 1;
+    showSlides(1, id);
+}
+
+function plusSlides(n, id) {
+    showSlides(slideIndex[id] += n, id);
+}
+
+function currentSlide(n, id) {
+    showSlides(slideIndex[id] = n, id);
+}
+
+function showSlides(n, id) {
+    let container = document.getElementById(id);
+    let slides = container.getElementsByClassName("slide");
+    let dots = document.getElementById(id.replace("Slides", "Dots")).getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex[id] = 1 }
+    if (n < 1) { slideIndex[id] = slides.length }
+
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    for (let i = 0; i < dots.length; i++) dots[i].classList.remove("active");
+
+    slides[slideIndex[id]-1].style.display = "block";
+    dots[slideIndex[id]-1].classList.add("active");
+}
+
+window.onload = function() {
+    initSlideshow("magicSlides");
+    initSlideshow("pokemonSlides");
+    initSlideshow("saleSlides");
+};
+</script>
+
+</body>
+</html>
